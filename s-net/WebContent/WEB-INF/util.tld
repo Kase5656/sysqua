@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib>
+<taglib version="2.1" xmlns:javaee="http://java.sun.com/xml/ns/javaee"
+	xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                            http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd ">
+
+	<tlib-version>2.1</tlib-version>
+	<short-name>utility</short-name>
+
+	<function>
+		<name>currentYear</name>
+		<function-class>com.nc2017.controller.DateUtil</function-class>
+		<function-signature>java.lang.String getCurrentYear()</function-signature>
+	</function>
+
+	<function>
+		<name>currentMonth</name>
+		<function-class>com.nc2017.controller.DateUtil</function-class>
+		<function-signature>java.lang.String getCurrentMonth()</function-signature>
+	</function>
+
+</taglib>

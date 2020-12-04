@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+
+#scrollframe {
+	width: 500px;
+}
+
+.errbox {
+	position: relative;
+	width: 480px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffdff9;
+	color: red;
+	border: 3px solid #f00;
+	text-align: left;
+}
+
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+/*
+　* header内の画面構成用テーブル
+　*/
+.table td{
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+
+.table td:nth-child(1) {
+	width: 1%;
+}
+
+.table td:nth-child(2) {
+	width: 30%;
+}
+
+.table td:nth-child(3) {
+	width: 30%;
+}
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+
+table.err {
+	text-indent: 10px;
+	color: red;
+}

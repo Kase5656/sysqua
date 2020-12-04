@@ -1,0 +1,15 @@
+<!DOCTYPE context>
+<Context>
+	<Resource name="jdbc/mysql/rookies"
+		type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://153.126.190.151:3306/rookies?autoReconnect=true&amp;serverTimezone=JST&amp;useSSL=false&amp;"
+		username="intec" password="sqt_itmng/3666" maxIdle="10"
+		defaultAutoCommit="false" />
+
+	<Resource name="jdbc/mysql/test_rookies"
+		type="javax.sql.DataSource" driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost/test_rookies?autoReconnect=true&amp;serverTimezone=JST&amp;useSSL=false&amp;"
+		username="root" password="mysql" maxIdle="10"
+		defaultAutoCommit="false" />
+
+</Context>

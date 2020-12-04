@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+
+#scrollframe {
+	width: 100%;
+}
+
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+/*
+　* header内の画面構成用テーブル
+　*/
+
+.table td:nth-child(1) {
+	width: 1%;
+	}
+
+.table td:nth-child(2) {
+	width: 18%;
+}
+
+.table td:nth-child(3) {
+	width: 20%;
+	text-align: left;
+}
+
+.table td:nth-child(4) {
+	width: 30%;
+	text-align: left;
+}
+
+.table td:nth-child(5) {
+	width: 10%;
+}
+
+.table td:nth-child(6) {
+	width: 10%;
+}
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+
+table.errbox, table.errbox2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+table.err {
+	text-indent: 10px;
+	color: red;
+}
+
+input[name="AccountUpdate_btn"],
+input[name="InfLogin_btn"],
+input[alt="マイページ画面"],
+input[alt="基本情報変更"] {
+	width: auto;
+	height: auto;
+}
+
+.search input[type="text"],.search input[type="date"],.search input[type="password"],
+.search input[type="tel"] {
+	width: 100%;
+	height: 50px;
+}
+
+.search input[type="tel"] {
+	width: 100%!important;
+}
+
+.search select {
+	height: 50px;
+}
+

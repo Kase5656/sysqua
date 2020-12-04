@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+
+#scrollframe {
+ 	width: 100%;
+	margin: 0 auto;
+}
+
+div.testItem {
+	width: 95%;
+	text-align: left;
+	margin: 0 auto;
+ }
+
+.errbox {
+	position: relative;
+	width: 95%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffdff9;
+	color: red;
+	border: 3px solid #f00;
+	text-align: left;
+}
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+/*
+　* header内の画面構成用テーブル
+　*/
+
+.table th:nth-child(1),.table td:nth-child(1)  {
+	width: 10%!important;
+	text-align: left;
+	vertical-align: top;
+	height: auto;
+	padding: 0!important;
+}
+
+.table th:nth-child(2),.table td:nth-child(2) {
+	width: 10%!important;
+	height: auto;
+	padding: 0!important;
+	vertical-align: top;
+}
+
+.table th:nth-child(3),.table td:nth-child(3) {
+	width: 30%!important;
+	text-align: left;
+	vertical-align: top;
+	word-break: break-all;
+	padding: 0!important;
+	font-size: 12px;
+}
+
+.table th:nth-child(4), th:nth-child(5), th:nth-child(6), th:nth-child(7),
+th:nth-child(8),.table td:nth-child(4), td:nth-child(5), td:nth-child(6), td:nth-child(7),
+td:nth-child(8) {
+	width: 10%!important;
+	padding: 0!important;
+	vertical-align: top;
+}
+
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+table.err {
+	text-indent: 10px;
+	color: red;
+}
+
+#global-body-left {
+/*	min-height: 100%;*/
+	width: 500px;
+	float: left;
+}
+
+#global-body-right {
+/*	min-height: 100%;*/
+	width: 700px;
+	float: right;
+}
+
+#headtitle {
+	font-size: 30px;
+	color: #1E90FF;
+/*	margin: 35px 0 0 20px;*/
+	text-align: left;
+
+}
+
+/* 問題用css */
+table.test_question {
+	width: 95%;
+	text-align: left;
+	border-collapse: separate;
+	border-spacing: 0px;
+	margin: 0 auto 30px auto;
+}
+
+table.test_question2 {
+
+}
+
+table.test_question th:first-child{
+  border-radius: 5px 0 0 0;
+}
+
+table.test_question th:last-child{
+  border-radius: 0 5px 0 0;
+  border-right: 1px solid #3c6690;
+}
+
+table.test_question th{
+  text-align: left;
+  color:white;
+  background: linear-gradient(#829ebc,#225588);
+  border-left: 1px solid #3c6690;
+  border-top: 1px solid #3c6690;
+  border-bottom: 1px solid #3c6690;
+  box-shadow: 0px 1px 1px rgba(255,255,255,0.3) inset;
+  width: 25%;
+  padding: 10px 10px;
+}
+
+table.test_question td{
+  text-align: left;
+  border-left: 1px solid #a8b7c5;
+  border-bottom: 1px solid #a8b7c5;
+  border-top:none;
+  box-shadow: 0px -3px 5px 1px #eee inset;
+  width: 25%;
+  padding: 10px 0;
+}
+
+table.test_question td:last-child{
+  border-right: 1px solid #a8b7c5;
+}
+
+table.test_question tr:last-child td:first-child {
+  border-radius: 0 0 0 5px;
+}
+
+table.test_question tr:last-child td:last-child {
+  border-radius: 0 0 5px 0;
+}
+
+pre {
+	margin-left: 10px;
+	width: 95%;
+	height: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+}
+
+
+/* 結果用css */
+p.reporttitle {
+	text-align: center;
+}
+
+p.reporttitle + div {
+	text-align: center;
+	margin-bottom:30px;
+}
+
+iframe {
+	width: 95%!important;
+	margin: 0 auto;
+}
+
+#foo-table {
+	width: 95%;
+	margin: 0 auto;
+}
+
+#foo-table th,#foo-table td {
+	font-size : 14px;
+}

@@ -1,0 +1,344 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+#scrollframe {
+	width: 1400px;
+}
+
+div#body-layout {
+	width: 1200px;
+	top: 30px;
+}
+
+div#global-body-left {
+	/*	min-height: 70%;*/
+	width: 300px;
+	float: left;
+}
+
+div#global-body-right {
+	/*	min-height: 70%;*/
+	width: 557px;
+	height: 925px;
+	float: right;
+}
+
+div#detailbody-layout {
+	position: relative;
+	width: 100%;
+	top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#global-detailbody-left {
+	/*	min-height: 70%;*/
+	width: 370px;
+	float: left;
+}
+
+div#global-detailbody-right {
+	/*	min-height: 70%;*/
+	width: 670px;
+	height: auto;
+	float: right;
+	padding-bottom: 50px;
+}
+
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+table.errbox, table.errbox2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+　* header内の画面構成用テーブル
+　*/
+.table td:nth-child(1) {
+	width: 25%;
+}
+
+.table td:nth-child(2) {
+	width: 15%;
+}
+
+.table td:nth-child(3) {
+	width: 10%;
+}
+
+.table td:nth-child(4) {
+	width: 15%;
+}
+
+.table td:nth-child(5) {
+	width: 10%;
+}
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+table.err {
+	text-indent: 10px;
+	color: red;
+}
+
+table#head-table {
+	/*width: 1200px;*/
+	border-spacing: 0;
+	font-size: 14px;
+	padding-bottm: 50px;
+}
+
+table#head-table2 {
+	position: relative;
+	top: 0px;
+	border-spacing: 0;
+	font-size: 14px;
+}
+
+#head-table th {
+	color: #fff;
+	padding: 8px 0px;
+	background: #258;
+	background: -moz-linear-gradient(rgba(34, 85, 136, 0.7),
+		rgba(34, 85, 136, 0.9) 50%);
+	background: -webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34, 85, 136, 0.7)),
+		to(rgba(34, 85, 136, 0.9)));
+	font-weight: bold;
+	border-left: 1px solid #258;
+	border-top: 1px solid #258;
+	border-bottom: 1px solid #258;
+	line-height: 120%;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(34, 85, 136, 0.9);
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table th:nth-child(1) {
+	width: 130px;
+	border-radius: 5px;
+}
+
+#head-table th:nth-child(2) {
+	width: 300px;
+}
+
+#head-table th:nth-child(3) {
+	width: 675px;
+	border-radius: 0 5px 0 0;
+	border-right: 1px solid #258;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px
+		rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table tr td {
+	height: 20px;
+	padding: 8px 0px;
+	border-bottom: 1px solid #84b2e0;
+	border-left: 1px solid #84b2e0;
+	text-align: left;
+}
+
+#head-table tr td:nth-child(1) {
+	width: 200px;
+}
+
+#head-table tr td:nth-child(2) {
+	width: 290px;
+	padding-left: 20px;
+	border-radius: 5px;
+}
+
+#head-table tr td:nth-child(3) {
+	width: 675px;
+	border-right: 1px solid #84b2e0;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#head-table tr {
+	background: #fff;
+}
+
+#head-table tr:nth-child(2n+1) {
+	background: #f1f6fc;
+}
+
+#head-table tr:last-child td {
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#head-table tr:last-child td:first-child {
+	border-radius: 0 0 0 5px;
+}
+
+#head-table tr:last-child td:last-child {
+	border-radius: 0 0 5px 0;
+}
+
+#head-table tr:hover {
+	background: #bbd4ee;
+	cursor: pointer;
+}
+
+thead.scrollHeadtest, tbody.scrollBodytest {
+	width: 590px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	word-break: break-all;
+}
+
+tbody.scrollBodytest {
+	border: solid 1px #808080;
+	overflow: auto;
+	height: 400px;
+}
+
+.date {
+	width: 130px;
+	text-align: center;
+}
+
+.onoff {
+	width: 100px;
+}
+
+.test {
+	width: 100px;
+	text-align: center;
+}
+
+.report {
+	width: 100px;
+	text-align: center;
+}
+
+.attendance {
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 153px;
+}
+
+.technologylevel {
+	position: relative;
+	float: right;
+	width: 180px;
+	height: 153px;
+}
+
+.interview {
+	position: relative;
+	float: left;
+	width: 180px;
+	height: 153px;
+}
+
+.duties {
+	position: relative;
+	float: right;
+	width: 180px;
+	height: 153px;
+}
+
+.question {
+	position: relative;
+	float: left;
+	right: 27px;
+	width: 180px;
+	height: 153px;
+}
+
+.comment {
+	position: relative;
+	float: left;
+	width: 470px;
+	height: 153px;
+}
+/* リスト */
+div.title {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+ul.list {
+	padding: 0;
+	font: 14px/1.6 'arial narrow', sans-serif;
+	list-style: none;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+ul.list li {
+	position: relative;
+	padding: 7px 5px 7px 10px;
+	margin-bottom: 5px;
+	border-left: solid 5px #5c9ee7;
+	background: #f1f8ff;
+	color: #5c9ee7;
+	font-weight: bold;
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+thead.scrollHead2, tbody.scrollBody2 {
+	display: block;
+	word-break: break-all;
+	width: 100%;
+}
+
+thead.scrollHead2 {
+
+}
+
+tbody.scrollBody2 {
+	border: solid 1px #808080;
+	overflow-y: scroll;
+	height: 260px;
+}
+
+#head-table2 th:nth-child(3), td:nth-child(3) {
+	width: 70px;
+}
+
+#head-table2 th:nth-child(2), td:nth-child(2) {
+	width: 100px;
+}
+
+#head-table2 th:nth-child(1), td:nth-child(1) {
+	width: 70px;
+}
+
+#head-table2 th:nth-child(4), td:nth-child(4) {
+	width: 184px;
+}
+
+tbody.scrollBody2 p {
+	width: 180px;
+	white-space: nowrap;
+	overflow: hidden;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+	text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+}
+
+td.commenttd {
+	font-size: 9px;
+	text-align: left;
+}

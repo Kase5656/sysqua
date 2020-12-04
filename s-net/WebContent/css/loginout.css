@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+
+.errbox {
+	position: relative;
+	width: 480px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffdff9;
+	color: red;
+	border: 3px solid #f00;
+	text-align: left;
+}
+
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+/*
+　* header内の画面構成用テーブル
+　*/
+
+.table td:nth-child(1) {
+	text-align: left;
+	height: 135px;
+}
+
+.table td:nth-child(2) {
+	width: 200px;
+	height: 135px;
+}
+
+.table td:nth-child(3) {
+	width: 30%;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+table.err {
+	text-indent: 10px;
+	color: red;
+}
+
+/* ログイン画面 */
+#body-layout {
+	position: relative;
+	width: 1200px;
+	top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#global-body-left {
+/*	min-height: 100%;*/
+	width: 500px;
+	float: left;
+}
+
+#global-body-right {
+/*	min-height: 100%;*/
+	width: 700px;
+	float: right;
+}
+
+#background-i {
+	height: 185px;
+	margin: 0 20px 20px 20px;
+    background: #F0F8FF;
+    border-radius: 5px;
+/*    font-size: 1.5rem;
+    white-space: pre-line;*/
+}
+
+#background-d {
+ 	height: 85px;
+    margin: 0 20px 20px 20px;
+    background: #F0F8FF;
+    border-radius: 5px;
+/*    font-size: 1.5rem;
+    white-space: pre-line;*/
+}
+
+#headtitle {
+	font-size: 30px;
+	color: #1E90FF;
+/*	margin: 35px 0 0 20px;*/
+	text-align: left;
+}

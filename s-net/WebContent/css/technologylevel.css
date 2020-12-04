@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+#scrollframe {
+	width: 1220px;
+}
+
+body {
+	margin: 0;
+	/*	padding-top: 110px;
+	padding-bottom: 30px;*/
+	font-family: "Meiryo UI", sans-serif;
+}
+
+div#global-body-left1 {
+	width: 626px;
+	float: left;
+}
+
+div#global-body-right1 {
+	width: 500px;
+	float: right;
+}
+
+th.level1 {
+	position: relative;
+	width: 290px;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+input[type=text] {
+	position: relative;
+	width: 310px;
+	height: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	font-size: 40px;
+	text-align: center;
+}
+
+td#td2 {
+	word-break: break-all;
+	border: solid 1px #000000;
+}
+
+td#Ftd1 {
+	background-color: #7fbfff;
+	text-align: center;
+	border: solid 1px #000000;
+	height: 65px;
+}
+
+td#Etd1 {
+	background-color: #b7dbff;
+	text-align: center;
+	border: solid 1px #000000;
+	height: 65px;
+}
+
+td#Dtd1 {
+	background-color: #eff7ff;
+	text-align: center;
+	border: solid 1px #000000;
+	height: 65px;
+}
+
+td#Ctd1 {
+	background-color: #ffefef;
+	text-align: center;
+	border: solid 1px #000000;
+	height: 65px;
+}
+
+td#Btd1 {
+	background-color: #ffb7b7;
+	text-align: center;
+	border: solid 1px #000000;
+	height: 65px;
+}
+
+td#Atd1 {
+	background-color: #ff7f7f;
+	text-align: center;
+	border: solid 1px #000000;
+	height: 65px;
+}
+
+th#levelhead1 {
+	width: 44px;
+}
+
+th#levelhead2 {
+	width: 130px;
+}
+
+#scrollframe2 {
+	width: 1200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	text-align: center;
+}
+
+.errbox {
+	position: relative;
+	width: 480px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #ffdff9;
+	color: red;
+	border: 3px solid #f00;
+	text-align: left;
+}
+
+td.textbox {
+	position: relative;
+	width: 50px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	color: brack;
+	border: solid 1px #a9a9a9;
+	font-size: 16px;
+}
+
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+.list th {
+	font-size: 17px;
+	border-bottom: solid 1px silver;
+}
+
+th.null, th.levelStart, th.levelEnd, th.GoalReason, th.Goal, td.null {
+	font-weight: normal;
+	font-size: 16px;
+	color: white;
+	background: linear-gradient(#829ebc, #225588);
+	border-left: 1px solid #3c6690;
+	border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+.null {
+	width: 30px;
+	height: 90px;
+}
+
+.levelStart {
+	width: 180px;
+	text-align: center;
+}
+
+.levelStarta {
+	width: 180px;
+	text-align: center;
+	background-color: #ff7f7f;
+	font-size: 40pt;
+}
+
+.levelStartb {
+	width: 180px;
+	text-align: center;
+	background-color: #ffb7b7;
+	font-size: 40pt;
+}
+
+.levelStartc {
+	width: 180px;
+	text-align: center;
+	background-color: #ffefef;
+	font-size: 40pt;
+}
+
+.levelStartd {
+	width: 180px;
+	text-align: center;
+	background-color: #eff7ff;
+	font-size: 40pt;
+}
+
+.levelStarte {
+	width: 180px;
+	text-align: center;
+	background-color: #b7dbff;
+	font-size: 40pt;
+}
+
+.levelStartf {
+	width: 180px;
+	text-align: center;
+	background-color: #7fbfff;
+	font-size: 40pt;
+}
+
+.levelEnd {
+	width: 180px;
+	text-align: center;
+}
+
+.levelEnda {
+	width: 180px;
+	text-align: center;
+	background-color: #ff7f7f;
+	font-size: 40pt;
+}
+
+.levelEndb {
+	width: 180px;
+	text-align: center;
+	background-color: #ffb7b7;
+	font-size: 40pt;
+}
+
+.levelEndc {
+	width: 180px;
+	text-align: center;
+	background-color: #ffefef;
+	font-size: 40pt;
+}
+
+.levelEndd {
+	width: 180px;
+	text-align: center;
+	background-color: #eff7ff;
+	font-size: 40pt;
+}
+
+.levelEnde {
+	width: 180px;
+	text-align: center;
+	background-color: #b7dbff;
+	font-size: 40pt;
+}
+
+.levelEndf {
+	width: 180px;
+	text-align: center;
+	background-color: #7fbfff;
+	font-size: 40pt;
+}
+
+th.GoalReason {
+	width: 400px;
+	text-align: center;
+}
+
+td.GoalReason {
+	width: 400px;
+	word-break: break-all;
+	text-align: left;
+}
+
+th.Goal {
+	width: 400px;
+	text-align: center;
+}
+
+td.Goal  {
+	width: 400px;
+	word-break: break-all;
+	text-align: left;
+}
+
+/*
+ *　ヘッダーメニューバー
+ */
+#global-header {
+	zoom: 1;
+	width: 100%;
+	height: 95px;
+	background-image: url(images/headerback.png);
+	top: 0px;
+	z-index: 100;
+	transition: .2s;
+	transition-property: initial;
+	transition-duration: 0.2s;
+	transition-timing-function: initial;
+	transition-delay: initial;
+}
+
+/********sample*****************/
+#date {
+	width: 223px;
+	height: 67px;
+	border: 0px;
+	position: absolute;
+	top: 13px;
+	left: 50px;
+}
+/*************************/
+#head-table {
+	/*width: 1200px;*/
+	border-spacing: 0;
+	font-size: 14px;
+	padding-bottm: 50px;
+}
+
+#head-table th {
+	color: #fff;
+	padding: 8px 0px;
+	background: #258;
+	background: -moz-linear-gradient(rgba(34, 85, 136, 0.7),
+		rgba(34, 85, 136, 0.9) 50%);
+	background: -webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34, 85, 136, 0.7)),
+		to(rgba(34, 85, 136, 0.9)));
+	font-weight: bold;
+	border-left: 1px solid #258;
+	border-top: 1px solid #258;
+	border-bottom: 1px solid #258;
+	line-height: 120%;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(34, 85, 136, 0.9);
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table th:nth-child(1) {
+	width: 201px;
+	border-radius: 5px 0 0 0;
+}
+
+#head-table th:nth-child(2) {
+	width: 309px;
+}
+
+#head-table th:nth-child(3) {
+	width: 676px;
+	border-radius: 0 5px 0 0;
+	border-right: 1px solid #258;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px
+		rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table tr td {
+	height: 20px;
+	padding: 8px 0px;
+	border-bottom: 1px solid #84b2e0;
+	border-left: 1px solid #84b2e0;
+	text-align: left;
+}
+
+#head-table tr td:nth-child(1) {
+	width: 201px;
+}
+
+#head-table tr td:nth-child(2) {
+	width: 290px;
+	padding-left: 20px;
+}
+
+#head-table tr td:nth-child(3) {
+	width: 676px;
+	border-right: 1px solid #84b2e0;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#head-table tr {
+	background: #fff;
+}
+
+#head-table tr:nth-child(2n+1) {
+	background: #f1f6fc;
+}
+
+#head-table tr:last-child td {
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#head-table tr:last-child td:first-child {
+	border-radius: 0 0 0 5px;
+}
+
+#head-table tr:last-child td:last-child {
+	border-radius: 0 0 5px 0;
+}
+
+#head-table tr:hover {
+	background: #bbd4ee;
+	cursor: pointer;
+}
+
+div#body-layout {
+	width: 1200px;
+	top: 0px;
+}
+
+div#global-body-left {
+	/*	min-height: 70%;*/
+	width: 500px;
+	float: left;
+}
+
+#background-d {
+	height: 60px;
+	margin: 0 20px 20px 20px;
+	background: #F0F8FF;
+	border-radius: 5px;
+}
+
+div#global-body-right {
+	/*	min-height: 70%;*/
+	width: 700px;
+	float: right;
+}
+
+#background-1 {
+	width: 200px;
+	height: 160px;
+	margin: 0 10px 10px 10px;
+	background: #F0F8FF;
+	border-radius: 5px;
+	float: left;
+}
+
+#background-2 {
+	width: 200px;
+	height: 160px;
+	margin: 0 10px 10px 10px;
+	background: #F0F8FF;
+	border-radius: 5px;
+	float: left;
+}
+
+#background-3 {
+	width: 200px;
+	height: 160px;
+	margin: 0 10px 10px 10px;
+	background: #F0F8FF;
+	border-radius: 5px;
+	float: left;
+}
+
+#head-char {
+	font-size: 12px;
+	color: #1E90FF;
+	margin-left: 5px;
+}
+
+#body-char {
+	font-size: 70px;
+	color: #1E90FF;
+	margin: 0 0 0 20px;
+}
+
+table.content th {
+	background: #D5EEFF;
+}

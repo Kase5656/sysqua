@@ -1,0 +1,284 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+#scrollframe {
+	width: 100%;
+}
+
+ */
+div#body-layout {
+	width: 1100px;
+	top: 50px;
+}
+
+div#global-body-left {
+	/*	min-height: 70%;*/
+	width: 300px;
+	float: left;
+}
+
+div#global-body-right {
+	/*	min-height: 70%;*/
+	width: 557px;
+	height: 925px;
+	float: right;
+}
+
+div#detailbody-layout {
+	position: relative;
+	width: 100%;
+	top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div#global-detailbody-left {
+	/*	min-height: 70%;*/
+	width: 370px;
+	float: left;
+}
+
+div#global-detailbody-right {
+	/*	min-height: 70%;*/
+	width: 670px;
+	height: auto;
+	float: right;
+}
+
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+table.errbox, table.errbox2 {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
+　* header内の画面構成用テーブル
+　*/
+.table td:nth-child(1) {
+	height: 1%;
+}
+
+.table td:nth-child(2) {
+	width: 20%;
+	text-align: left;
+}
+
+.table td:nth-child(3) {
+	width: 20%;
+	text-align: left;
+}
+
+.table td:nth-child(4) {
+	width: 20%;
+	text-align: left;
+}
+
+.table td:nth-child(5) {
+	width: 10%;
+}
+
+.table td:nth-child(6) {
+	width: 10%;
+}
+
+.table td:nth-child(7) {
+	width: 10%;
+}
+
+.table td:nth-child(8) {
+	width: 10%;
+}
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+table.err {
+	text-indent: 10px;
+	color: red;
+}
+
+table#head-table {
+	/*width: 1200px;*/
+	border-spacing: 0;
+	font-size: 14px;
+	padding-bottm: 50px;
+}
+
+#head-table th {
+	color: #fff;
+	padding: 8px 0px;
+	background: #258;
+	background: -moz-linear-gradient(rgba(34, 85, 136, 0.7),
+		rgba(34, 85, 136, 0.9) 50%);
+	background: -webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34, 85, 136, 0.7)),
+		to(rgba(34, 85, 136, 0.9)));
+	font-weight: bold;
+	border-left: 1px solid #258;
+	border-top: 1px solid #258;
+	border-bottom: 1px solid #258;
+	line-height: 120%;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(34, 85, 136, 0.9);
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table th:nth-child(1) {
+	width: 130px;
+	border-radius: 5px;
+}
+
+#head-table th:nth-child(2) {
+	width: 300px;
+}
+
+#head-table th:nth-child(3) {
+	width: 675px;
+	border-radius: 0 5px 0 0;
+	border-right: 1px solid #258;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px
+		rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table tr td {
+	height: 20px;
+	padding: 8px 0px;
+	border-bottom: 1px solid #84b2e0;
+	border-left: 1px solid #84b2e0;
+	text-align: left;
+}
+
+#head-table tr td:nth-child(1) {
+	width: 200px;
+}
+
+#head-table tr td:nth-child(2) {
+	width: 290px;
+	padding-left: 20px;
+	border-radius: 5px;
+}
+
+#head-table tr td:nth-child(3) {
+	width: 675px;
+	border-right: 1px solid #84b2e0;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#head-table tr {
+	background: #fff;
+}
+
+#head-table tr:nth-child(2n+1) {
+	background: #f1f6fc;
+}
+
+#head-table tr:last-child td {
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1);
+}
+
+#head-table tr:last-child td:first-child {
+	border-radius: 0 0 0 5px;
+}
+
+#head-table tr:last-child td:last-child {
+	border-radius: 0 0 5px 0;
+}
+
+#head-table tr:hover {
+	background: #bbd4ee;
+	cursor: pointer;
+}
+
+thead.scrollHeadtest, tbody.scrollBodytest {
+	width: 590px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	word-break: break-all;
+}
+
+tbody.scrollBodytest {
+	border: solid 1px #808080;
+	overflow: auto;
+	height: 400px;
+}
+
+.date {
+	width: 130px;
+	text-align: center;
+}
+
+.onoff {
+	width: 100px;
+}
+
+.test {
+	width: 100px;
+	text-align: center;
+}
+
+.report {
+	width: 100px;
+	text-align: center;
+}
+
+.attendance {
+	position: relative;
+	float: left;
+}
+
+.technologylevel {
+	position: relative;
+	float: right;
+	top: -1px;
+}
+
+.interview {
+	position: relative;
+	float: left;
+}
+
+.question {
+	position: relative;
+	float: right;
+	top: -10px;
+}
+
+/* リスト */
+div.title {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+ul.list {
+	padding: 0;
+	font: 14px/1.6 'arial narrow', sans-serif;
+	list-style: none;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+ul.list li {
+	position: relative;
+	padding: 7px 5px 7px 10px;
+	margin-bottom: 5px;
+	border-left: solid 5px #5c9ee7;
+	background: #f1f8ff;
+	color: #5c9ee7;
+	font-weight: bold;
+	-webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}

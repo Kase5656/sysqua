@@ -1,0 +1,659 @@
+@charset "utf-8";
+
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+#scrollframe {
+	width: 100%;
+}
+
+textarea {
+	width: 95% !important;
+}
+
+input[type="time"] {
+	width: 25%;
+}
+
+table.content, div.content, table.reportcheck {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div .text {
+	width: 400px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+/*
+　* header内の画面構成用テーブル
+　*/
+.table td:nth-child(1) {
+	text-align: left;
+	height: 135px;
+}
+
+.table td:nth-child(2) {
+	width: 200px;
+	height: 135px;
+}
+
+.table td:nth-child(3) {
+	width: 30%;
+	text-align: right;
+	vertical-align: bottom;
+}
+
+table.button3 {
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-bottom: auto;
+	text-align: center;
+}
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+
+/* 各要素 */
+th.time, th.contentsItem, th.progress, th.understanding, th.impression,
+	th.monthgoal, th.todaygoal, th.todaygoalscore, th.todaysatisfaction, th.todayproblem,
+	th.todaymeasures, th.nextplan, th.allimpression {
+	position: relative;
+	height: 50px;
+	color: white;
+	background: linear-gradient(#829ebc, #225588);
+	border-left: 1px solid #3c6690;
+	border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+th.time {
+	width: 160px;
+}
+
+td.time input {
+	font-size: 16px !important;
+}
+
+td input[name^="starttime_txt"] {
+	margin-right: 10px;
+}
+
+td input[name^="endtime_txt"] {
+	margin-left: 10px;
+}
+
+th.contentsItem {
+	width: 300px;
+}
+
+th.progress, th.understanding {
+	width: 60px;
+}
+
+th.impression {
+	width: 500px;
+}
+
+th.header {
+	text-align: left;
+}
+
+td.comment {
+	position: relative;
+	height: 145px;
+	text-align: left;
+	background-color: #FFFFFF;
+	font-size: 16px;
+}
+
+td.time, td.contentsItem, td.progress, td.understanding, td.impression {
+	position: relative;
+	height: auto !important;
+	text-align: center;
+	background-color: #FFFFFF;
+	border: solid 1px #a9a9a9;
+	font-size: 16px;
+	width: 100% !important;
+	border: solid 1px #a9a9a9 !important;
+	margin: 0 !important;
+}
+
+td.todaygoalscore, td.todaysatisfaction, td.todaysatisfaction {
+	width: 100% !important;
+	height: auto !important;
+}
+
+td.monthgoal, td.todaygoal, td.todaygoalscore, td.todaysatisfaction, td.todayproblem,
+	td.todaymeasures, td.nextplan, td.allimpression {
+	position: relative;
+	height: auto;
+	background-color: #FFFFFF;
+	border: solid 1px #a9a9a9;
+	font-size: 16px;
+	margin-top: 0px !important;
+	border: 1px solid #a9a9a9 !important;
+}
+
+td.monthgoal, td.todaygoal, td.todaysatisfaction, td.todayproblem, td.todaymeasures,
+	td.nextplan, td.allimpression {
+	width: 700px;
+}
+
+select.todaygoalscore {
+	margin-left: 40%;
+	height: 100%;
+	width: 20%;
+}
+
+textarea.todaymeasures, textarea.nextplan, textarea.allimpression {
+	width: 95%;
+	height: 100px;
+}
+
+textarea.todaysatisfaction, textarea.todayproblem {
+	width: 95%;
+	height: 70px;
+}
+
+td.progress select, td.understanding select {
+	height: 35px;
+}
+
+textarea.item {
+	width: 95%;
+	height: 35px;
+}
+
+textarea.impression {
+	width: 95%;
+	height: 50px;
+}
+
+textarea.comment {
+	width: 95%;
+	height: 175px;
+	margin: 0 auto;
+}
+
+* /
+table.err {
+	text-indent: 10px;
+	color: red;
+}
+
+.content th {
+	max-height: 10px;
+	border-right: 1px solid #3c6690;
+}
+
+/*.content td {
+	padding: 0 5px;
+}*/
+.content th, .content td {
+	float: left;
+	min-height: 25px;
+	width: 100%;
+	box-sizing: border-box;
+	word-break: break-all;
+}
+
+.content tr:nth-child(4) td.paragraphbox, .content tr:nth-child(5) td.paragraphbox,
+	.content tr:nth-child(6) td.paragraphbox, .content tr:nth-child(7) td.paragraphbox,
+	.content tr:nth-child(8) td.paragraphbox {
+	text-align: left !important;
+}
+
+.content tr:nth-child(4) td:nth-child(1), .content tr:nth-child(5) td:nth-child(1),
+	.content tr:nth-child(6) td:nth-child(1), .content tr:nth-child(7) td:nth-child(1),
+	.content tr:nth-child(8) td:nth-child(1) {
+	display: block;
+	width: 40%;
+	float: left;
+	background-color: #84b2e0;
+	color: #fff;
+	font-weight: bold;
+	height: 30px;
+	border: solid 1px #a9a9a9;
+	border-right: none;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.content tr:nth-child(4) td:nth-child(1), .content tr:nth-child(4) td:nth-child(2)
+	{
+	margin-top: 0 !important;
+}
+
+.content tr:nth-child(4) td:nth-child(2), .content tr:nth-child(5) td:nth-child(2),
+	.content tr:nth-child(6) td:nth-child(2), .content tr:nth-child(7) td:nth-child(2),
+	.content tr:nth-child(8) td:nth-child(2) {
+	display: block;
+	width: 60%;
+	float: left;
+	background-color: #84b2e0;
+	color: #fff;
+	font-weight: bold;
+	height: 30px;
+	border: solid 1px #a9a9a9;
+	border-left: none;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+
+.content tr:nth-child(4) td:nth-child(3)::before, .content tr:nth-child(5) td:nth-child(3)::before,
+	.content tr:nth-child(6) td:nth-child(3)::before, .content tr:nth-child(7) td:nth-child(3)::before,
+	.content tr:nth-child(8) td:nth-child(3)::before {
+	content: "進捗度(%)";
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	/*color: white;
+	background: linear-gradient(#829ebc, #225588);*/
+	border-right: 3px double #a9a9a9;
+	/*border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	padding: 2px 8px 7px 0;*/
+	margin: 0px 10px 0px -1px;
+	word-break: break-all;
+	width: 90px;
+	height: 100%;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+}
+
+.content tr:nth-child(4) td:nth-child(4)::before, .content tr:nth-child(5) td:nth-child(4)::before,
+	.content tr:nth-child(6) td:nth-child(4)::before, .content tr:nth-child(7) td:nth-child(4)::before,
+	.content tr:nth-child(8) td:nth-child(4)::before {
+	content: "理解度";
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	/*color: white;
+	background: linear-gradient(#829ebc, #225588);*/
+	border-right: 3px double #a9a9a9;
+	/*border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	padding: 2px 38px 7px 0;*/
+	float: left;
+	margin: 0px 10px 0px -1px;
+	word-break: break-all;
+	width: 90px;
+	height: 100%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.content tr:nth-child(4) td:nth-child(5)::before, .content tr:nth-child(5) td:nth-child(5)::before,
+	.content tr:nth-child(6) td:nth-child(5)::before, .content tr:nth-child(7) td:nth-child(5)::before,
+	.content tr:nth-child(8) td:nth-child(5)::before {
+	content: "所感";
+	margin: 0px 10px 0px -1px;
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	border-right: 3px double #a9a9a9;
+	border-bottom: 3px double #a9a9a9;
+	word-break: break-all;
+	border-collapse: collapse;
+	width: 90px;
+	height: 100%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.reportcheck th {
+	max-height: 10px;
+	border-right: 1px solid #3c6690;
+}
+
+/*.reportcheck td {
+	padding: 0 5px;
+}*/
+.reportcheck th, .reportcheck td {
+	float: left;
+	min-height: 25px;
+	width: 100%;
+	box-sizing: border-box;
+	word-break: break-all;
+}
+
+.reportcheck tr:nth-child(4) th {
+	display: none;
+}
+
+.reportcheck tr:nth-child(4) td, .reportcheck tr:nth-child(5) td,
+	.reportcheck tr:nth-child(6) td, .reportcheck tr:nth-child(7) td,
+	.reportcheck tr:nth-child(8) td {
+	text-align: left !important;
+}
+
+.reportcheck tr:nth-child(4) td:nth-child(1), .reportcheck tr:nth-child(5) td:nth-child(1),
+	.reportcheck tr:nth-child(6) td:nth-child(1), .reportcheck tr:nth-child(7) td:nth-child(1),
+	.reportcheck tr:nth-child(8) td:nth-child(1), .reportcheck tr:nth-child(9) td:nth-child(1)
+	{
+	display: block;
+	width: 40% !important;
+	float: left;
+	background-color: #84b2e0;
+	color: #fff;
+	font-weight: bold;
+	height: 3em !important;
+	border: solid 1px #a9a9a9;
+	border-right: none;
+	margin-top: 10px;
+	box-sizing: border-box;
+}
+
+.reportcheck tr:nth-child(5) td:nth-child(1), .reportcheck tr:nth-child(5) td:nth-child(2)
+	{
+	margin-top: 0 !important;
+}
+
+.reportcheck tr:nth-child(4) td:nth-child(2), .reportcheck tr:nth-child(5) td:nth-child(2),
+	.reportcheck tr:nth-child(6) td:nth-child(2), .reportcheck tr:nth-child(7) td:nth-child(2),
+	.reportcheck tr:nth-child(8) td:nth-child(2), .reportcheck tr:nth-child(9) td:nth-child(2)
+	{
+	display: block;
+	width: 60% !important;
+	float: left;
+	background-color: #84b2e0;
+	color: #fff;
+	font-weight: bold;
+	height: 3em !important;
+	border: solid 1px #a9a9a9;
+	border-left: none;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+
+.reportcheck tr:nth-child(5) td:nth-child(3)::before, .reportcheck tr:nth-child(6) td:nth-child(3)::before,
+	.reportcheck tr:nth-child(7) td:nth-child(3)::before, .reportcheck tr:nth-child(8) td:nth-child(3)::before,
+	.reportcheck tr:nth-child(9) td:nth-child(3)::before {
+	content: "進捗度(%)";
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	/*color: white;
+	background: linear-gradient(#829ebc, #225588);*/
+	border-right: 3px double #a9a9a9;
+	/*border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	padding: 2px 8px 7px 0;*/
+	margin: 0px 10px 0px -1px;
+	word-break: break-all;
+	width: 90px;
+	height: 100%;
+	box-sizing: border-box;
+	display: block;
+	float: left;
+}
+
+.reportcheck tr:nth-child(5) td:nth-child(4)::before, .reportcheck tr:nth-child(6) td:nth-child(4)::before,
+	.reportcheck tr:nth-child(7) td:nth-child(4)::before, .reportcheck tr:nth-child(8) td:nth-child(4)::before,
+	.reportcheck tr:nth-child(9) td:nth-child(4)::before {
+	content: "理解度";
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	/*color: white;
+	background: linear-gradient(#829ebc, #225588);*/
+	border-right: 3px double #a9a9a9;
+	/*border-top: 1px solid #3c6690;
+	border-bottom: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	padding: 2px 38px 7px 0;*/
+	float: left;
+	margin: 0px 10px 0px -1px;
+	word-break: break-all;
+	width: 90px;
+	height: 100%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.reportcheck tr:nth-child(5) td:nth-child(5)::before, .reportcheck tr:nth-child(6) td:nth-child(5)::before,
+	.reportcheck tr:nth-child(7) td:nth-child(5)::before, .reportcheck tr:nth-child(8) td:nth-child(5)::before,
+	.reportcheck tr:nth-child(9) td:nth-child(5)::before {
+	content: "所感";
+	/*padding: 2px 54px 6px 0;*/
+	margin: 0px 10px 0px -1px;
+	position: relative;
+	font-weight: normal;
+	font-size: 16px;
+	border-right: 3px double #a9a9a9;
+	border-bottom: 3px double #a9a9a9;
+	word-break: break-all;
+	border-collapse: collapse;
+	width: 90px;
+	height: 100%;
+	box-sizing: border-box;
+	display: block;
+}
+
+.reportcheck tr:nth-child(1) th, .reportcheck tr:nth-child(3) th,
+	.reportcheck tr:nth-child(10) th, .reportcheck tr:nth-child(13) th,
+	.reportcheck tr:nth-child(19) th, .reportcheck tr:nth-child(22) th,
+	.reportcheck tr:nth-child(24) th {
+	border-right: none;
+}
+
+td.todaygoalscore {
+	height: 35px;
+}
+
+.content tr:nth-child(2) th, .content tr:nth-child(9) th, .content tr:nth-child(12) th,
+	.content tr:nth-child(21) th, .content tr:nth-child(23) th {
+	border-right: none;
+}
+
+.content tr:nth-child(3) th {
+	display: none;
+}
+
+th.time, th.contentsItem, th.progress, th.understanding, th.impression {
+	display: none;
+}
+
+td.time, td.contentsItem, td.progress, td.understanding, td.impression,
+	th.monthgoal, th.todaygoal, th.todaymeasures {
+	display: table-cell !important;
+}
+
+th.header {
+	border-right: none;
+}
+
+td.time, td.contentsItem, td.todaygoalscore {
+	background: none !important;
+	border-bottom: 1px solid #a9a9a9 !important;
+}
+
+td.time {
+	color: unset !important;
+	/*margin-top: 10px!important;*/
+	height: 72px !important;
+}
+
+td.impression {
+	margin-bottom: 10px !important;
+}
+
+td.time:before {
+	content: "実施時間";
+	color: white;
+	border-top: none;
+	position: relative;
+	font-size: 16px;
+	color: white;
+	background: linear-gradient(#829ebc, #225588);
+	border-left: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	margin: 0px 0px 10px -1px;
+	width: 100%;
+	height: 25px;
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+	font-weight: normal;
+}
+
+td.contentsItem:before {
+	content: "研修項目";
+	border-top: none;
+	position: relative;
+	font-size: 16px;
+	color: white;
+	background: linear-gradient(#829ebc, #225588);
+	border-left: 1px solid #3c6690;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	margin: 0px;
+	width: 100%;
+	height: 25px;
+	box-sizing: border-box;
+	display: block;
+	text-align: center;
+	font-weight: normal;
+}
+
+td.progress:before {
+	content: "進捗度(%)";
+	border-top: none;
+	position: relative;
+	font-size: 16px;
+	color: white;
+	background: linear-gradient(#829ebc, #225588);
+	border-left: 1px solid #3c6690;
+	border-right: none !important;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	margin: 0px !important;
+	width: 100% !important;
+	height: 25px !important;
+	box-sizing: border-box !important;
+	display: block !important;
+	text-align: center !important;
+	font-weight: normal;
+}
+
+td.understanding:before {
+	content: "理解度";
+	border-top: none;
+	position: relative;
+	font-size: 16px;
+	color: white;
+	background: linear-gradient(#829ebc, #225588);
+	border-left: 1px solid #3c6690;
+	border-right: none !important;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	margin: 0px !important;
+	width: 100% !important;
+	height: 25px !important;
+	box-sizing: border-box !important;
+	display: block !important;
+	text-align: center !important;
+	font-weight: normal;
+}
+
+td.impression:before {
+	content: "所感";
+	border-top: none;
+	position: relative;
+	font-size: 16px;
+	color: white;
+	background: linear-gradient(#829ebc, #225588);
+	border-left: 1px solid #3c6690;
+	border-right: none !important;
+	border-bottom: none !important;
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+	margin: 0px !important;
+	width: 100% !important;
+	height: 25px !important;
+	box-sizing: border-box !important;
+	display: block !important;
+	text-align: center !important;
+	font-weight: normal;
+}
+
+td.todaysatisfaction {
+	background: none !important;
+}
+
+#global-body-left {
+	/*	min-height: 100%;*/
+	width: 500px;
+	float: left;
+}
+
+#global-body-right {
+	/*	min-height: 100%;*/
+	width: 700px;
+	float: right;
+}
+
+#background-i {
+	height: 185px;
+	margin: 0 20px 20px 20px;
+	background: #F0F8FF;
+	border-radius: 5px;
+	/*    font-size: 1.5rem;
+    white-space: pre-line;*/
+}
+
+#background-d {
+	height: 85px;
+	margin: 0 20px 20px 20px;
+	background: #F0F8FF;
+	border-radius: 5px;
+	/*    font-size: 1.5rem;
+    white-space: pre-line;*/
+}
+
+#headtitle {
+	font-size: 30px;
+	color: #1E90FF;
+	/*	margin: 35px 0 0 20px;*/
+	text-align: left;
+}
+
+.button3 {
+	margin: 30px auto 80px auto;
+}
+
+.button3 p {
+	margin-bottom: 30px;
+}
+
+table.content>tbody>tr>td>p {
+	text-align: right;
+	margin: 0;
+}
+
+input[name="CommnetDeleteSend_btn"] {
+	width: 15%;
+}
+
+/*Safari用CSS*/
+/*_::-webkit-full-page-media, _:future, :root td.time:before,
+_::-webkit-full-page-media, _:future, :root td.contentsItem:before,
+_::-webkit-full-page-media, _:future, :root td.progress:before,
+_::-webkit-full-page-media, _:future, :root td.understanding:before,
+_::-webkit-full-page-media, _:future, :root td.impression:before
+ {
+ 	padding: 7px 22px 0px 0px!important;
+}*/
+_::-webkit-full-page-media, _:future, :root td.time {
+	font-size: 4vmin !important;
+}

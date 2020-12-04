@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>rookies</display-name>
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+	<context-param>
+		<param-name>/insertInput.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.RegisterAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/search/list.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.SearchAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/search/search.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.SearchAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/search/input.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.InputAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/search/check.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.InsertUpdateAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/search/complete.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.DeleteAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/register/register.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.RegisterAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/register/input.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.InputAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/register/check.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.InsertUpdateAction</param-value>
+	</context-param>
+	<context-param>
+		<param-name>/search/editDelete.do</param-name>
+		<param-value>com.nc2015.team.eagles.controller.EditDeleteAction</param-value>
+	</context-param>
+</web-app>

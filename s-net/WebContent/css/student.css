@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+#dailylist{
+	margin: 60px 0 60px 20px;
+	width: 640px;
+	border-collapse:collapse
+}
+#dailylist  td.dailylisttitle{
+	color: #0070C0;
+	font-size: 25px;
+	text-align: center;
+}
+#dailylist  td.dailycontent{
+	text-align: center;
+	width: 100px;
+}
+#dailylist  td.date{
+	text-align: center;
+	width: 20px;
+}
+#dailylist tr{
+	border-bottom: 1px solid #0070C0;
+}
+#dailylist tr:first-child{
+	border-bottom: 1px solid #fff;
+}
+#dailylist td{
+	height: 60px;
+}
+#dailylist select{
+	height: 35px;
+	width: 75px;
+	font-size: 13px;
+}
+#head-table{
+	margin: 20px 0 0 20px;
+	border-collapse:collapse
+}
+#head-table tr{
+	border-bottom: 1px solid #0070C0;
+}
+#head-table th{
+	height: 60px;
+	width: 120px;
+}
+#head-table td{
+	height: 60px;
+	width: 310px;
+}
+#head-table th,#head-table td,#dailylist th,#dailylist td{
+	padding-top: 10px;
+	height: 55px;
+}

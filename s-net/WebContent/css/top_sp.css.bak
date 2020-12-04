@@ -1,0 +1,357 @@
+@charset "utf-8";
+
+/* スマートフォン用CSS */
+@media only screen and (max-width: 640px) {
+/*
+ *　ページ全体の枠組み、書式設定
+ */
+body {
+	margin: 0;
+	font-family: "Meiryo UI", sans-serif;
+	/*overflow-x: hidden;*/
+}
+
+#scrollframe {
+	width: 100%;
+}
+
+#scrollframe2 {
+	width: 1200px;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	text-align: center;
+}
+
+.toptbl {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0em 3em;
+	font-size: large;
+}
+
+.rowtbl {
+	width: 200px;
+	border-spacing: 0em 3em;
+	font-size: large;
+}
+
+.toptbl td:nth-child(1) {
+	text-align: center;
+}
+
+td.textbox {
+	position: relative;
+	width: 50px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #FFFFFF;
+	color: brack;
+	border: solid 1px #a9a9a9;
+	font-size: 16px;
+}
+
+div .text {
+	width: 95%;
+	height: 30px;
+	vertical-align: bottom;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: auto;
+	text-align: left;
+}
+
+/*
+　* header内の画面構成用テーブル
+　*/
+.button3 {
+	/*padding-right: 55px;
+	padding-left: 55px;*/
+}
+
+.button span.two-row {
+	position: absolute;
+	text-align: center;
+	top: 3px;
+	width: 180px;
+}
+
+.button span.two-row2 {
+	position: absolute;
+	text-align: center;
+	top: 3px;
+	width: 180px;
+}
+
+.button span.four-row {
+	position: absolute;
+	text-align: center;
+	top: 3px;
+	width: 180px;
+}
+
+table.errbox, table.errbox2 {
+	width: 95%;
+}
+
+select {
+	width: 100%;
+	height: 40px;
+}
+
+/*td.paragraphbox {
+	border: none;
+}*/
+
+/*
+　*　Body内の画面構成用テーブル
+　*/
+.searchform {
+	width: auto;
+	line-height: 22px;
+}
+
+.searchform th {
+	text-align: right;
+}
+
+.search th {
+	vertical-align: middle;
+	text-align: left;
+}
+
+.search td {
+	vertical-align: middle;
+	text-align: left;
+}
+
+pre {
+	line-height: 1.0;
+	font-family: "Meiryo UI", sans-serif;
+	white-space: pre-wrap;
+	width: 95%;
+	margin: 10 auto;
+}
+
+.form th {
+	vertical-align: middle;
+}
+
+.check td {
+	max-width: 500px;
+}
+
+.check pre {
+	max-width: 500px;
+	word-wrap: break-word;
+	white-space: pre-wrap;
+	line-height: 1.0;
+	font-family: "Meiryo UI", sans-serif;
+}
+
+thead.scrollHeadtest, tbody.scrollBodytest {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	word-break: break-all;
+}
+
+tbody.scrollBodytest {
+	border: solid 1px #808080;
+	overflow: auto;
+	height: 320px;
+}
+
+thead.scrollHead, tbody.scrollBody {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	word-break: break-all;
+}
+
+tbody.scrollBody {
+	border: solid 1px #808080;
+	overflow: auto;
+	height: 50vh;
+}
+
+.list th {
+	font-size: 17px;
+}
+
+.list td {
+	border-bottom: solid 1px silver;
+}
+
+td, th {
+	/*	table-layout: fixed;*/
+
+}
+
+/********sample*****************/
+#date {
+	width: 223px;
+	height: 67px;
+	border: 0px;
+	position: absolute;
+	top: 13px;
+	left: 50px;
+}
+/*************************/
+#head-table {
+	/*width: 1200px;*/
+	border-spacing: 0;
+	font-size: 14px;
+	width: 95%;
+	margin: 0 auto 20px auto;
+}
+
+#head-table th {
+	color: #fff;
+	padding: 8px 0px;
+	background: #258;
+	background: -moz-linear-gradient(rgba(34, 85, 136, 0.7),
+		rgba(34, 85, 136, 0.9) 50%);
+	background: -webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34, 85, 136, 0.7)),
+		to(rgba(34, 85, 136, 0.9)));
+	font-weight: bold;
+	border-left: 1px solid #258;
+	border-top: 1px solid #258;
+	border-bottom: 1px solid #258;
+	line-height: 120%;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(34, 85, 136, 0.9);
+	box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table th:nth-child(1) {
+	width: 201px;
+	border-radius: 5px 0 0 0;
+}
+
+#head-table th:nth-child(2) {
+	width: 309px;
+}
+
+#head-table th:nth-child(3) {
+	width: 676px;
+	border-radius: 0 5px 0 0;
+	border-right: 1px solid #258;
+	box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.1), 0px 1px 1px
+		rgba(255, 255, 255, 0.3) inset;
+}
+
+#head-table tr td {
+	/*height: 20px;*/
+	padding: 2px 2%;
+	border-bottom: 1px solid #84b2e0;
+	text-align: left;
+	width: 96%;
+	float: left;
+}
+
+#head-table tr td:nth-child(1) {
+	border-bottom: none;
+	padding-top: 12px;
+}
+
+#head-table tr td:nth-child(2) {
+	font-size: 18px;
+}
+
+#head-table tr {
+	background: #fff;
+}
+
+#head-table tr:nth-child(2n+1) {
+	background: #f1f6fc;
+}
+
+#head-table .scrollHead tr:first-child  {
+    display: none;
+}
+
+#head-table tr:hover {
+	background: #bbd4ee;
+	cursor: pointer;
+}
+
+div#body-layout {
+	width: 100%;
+	top: 20px;
+	margin-bottom: 80px;
+}
+
+div#global-body-left {
+	/*	min-height: 70%;*/
+	width: 100%;
+}
+
+#background-d {
+	height: auto;
+	/*	margin: 0 20px 20px 20px;
+	background: #F0F8FF;*/
+	border-radius: 5px;
+}
+
+#background-d table {
+	width: 100%;
+}
+
+#background-d input[type="image"] {
+	width: 65px;
+	height: 40px;
+}
+
+td.button3{
+	text-align: center;
+	width: 50%;
+}
+
+#detail {
+	/*	height: 55px;*
+	top: 0px;
+	margin-top: auto;
+	margin-left: 113px;
+	margin-right: 20px;*/
+	position: relative;
+	margin-bottom: auto;
+}
+
+div#global-body-right {
+	/*	min-height: 70%;*/
+	width: 100%;
+}
+
+#background {
+	width: 29%;
+	margin: 0 2% 80px 2%;
+	background: #F0F8FF;
+	border-radius: 5px;
+	float: left;
+}
+
+#head-char {
+	font-size: 12px;
+	color: #1E90FF;
+	margin: 0px 5px;
+	height: 3em;
+}
+
+#body-char {
+	font-size: 40px;
+	color: #1E90FF;
+	margin: 0 auto;
+	text-align: center;
+}
+#head-table td,.head-table tr {
+	width: 100%;
+	position: relative;
+  }
+
+#head-table tr {
+	margin-bottom: 40px;
+}
+}

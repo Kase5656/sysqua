@@ -549,6 +549,11 @@ public class QuestionAction implements Action {
 
 				} else {
 
+
+					Question question_ins = (Question) session.getAttribute("question");
+
+					QuestionDao.insert(question_ins);
+
 					session.setAttribute("questionFlg", 0);
 
 					servletPath = "/inf_question/questionComplete.jsp";
@@ -590,17 +595,19 @@ public class QuestionAction implements Action {
 
 				session.setAttribute("education", education);
 
-				List<Test> testList = TestDao.checkTestDetail2(String.valueOf(session.getAttribute("year")),
-						String.valueOf(session.getAttribute("startMonth")),
-						String.valueOf(session.getAttribute("endMonth")), education.getAccountNo());
+				List<Test> testList = TestDao.checkTestDetail2(
+						String.valueOf(session.getAttribute("year")),
+						String.valueOf(session.getAttribute("startMonth4")),
+						String.valueOf(session.getAttribute("endMonth4")), education.getAccountNo());
 
 				List<Report> reportList = ReportDao.checkReportDetail2(education.getAccountNo());
 
 				List<Comment> commentList = CommentDao.checkComment(education.getAccountNo());
 
-				List<CalendarUnq> calenderList = CalenderDao.search(String.valueOf(session.getAttribute("year")),
-						String.valueOf(session.getAttribute("startMonth")),
-						String.valueOf(session.getAttribute("endMonth")), "ASC");
+				List<CalendarUnq> calenderList = CalenderDao.search(
+						String.valueOf(session.getAttribute("year")),
+						String.valueOf(session.getAttribute("startMonth4")),
+						String.valueOf(session.getAttribute("endMonth4")), "ASC");
 
 				Date date = new Date();
 

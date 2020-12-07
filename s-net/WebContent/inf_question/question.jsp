@@ -8,9 +8,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" href="css/style.css" type="text/css">
-<link rel="stylesheet" href="css/question.css" type="text/css">
-<link rel="stylesheet" href="css/featherlight.css">
+<meta name="viewport"
+	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<link rel="stylesheet" href="css/style.css" type="text/css"
+	media="screen and (min-width: 640px)">
+<link rel="stylesheet" href="css/question.css" type="text/css"
+	media="screen and (min-width: 640px)">
+<link rel="stylesheet" href="css/question_sp.css" type="text/css"
+	media="screen and (max-width: 640px)">
+	<link rel="stylesheet" href="css/style_sp.css" type="text/css"
+	media="screen and (max-width: 640px)">
+<link rel="stylesheet" href="css/featherlight.css"
+	media="screen and (min-width: 640px)">
 <script type="text/javascript" charset="UTF-8" src="js/change.js"></script>
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -239,8 +248,8 @@
 					</div>
 					<div class="appropriate">
 						※「長すぎる」「短すぎる」を選択した場合のみお答えください。 <br /> <input
-							class="questionInput" type="number" min="0" max="99" name="a1_3_2" maxlength="2"
-							value="${question.ans1_3_2}" />日間が適切<br />
+							class="questionInput" type="number" min="0" max="99"
+							name="a1_3_2" maxlength="2" value="${question.ans1_3_2}" />日間が適切<br />
 					</div>
 				</div>
 				<div class="questionTitle1">
@@ -1013,8 +1022,8 @@
 					</table>
 					<div class="appropriate">
 						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。 <br />
-						⑤適切と思う日数を記入してください。 <input type="number" min="0" max="99" name="a2_4_5" maxlength="2"
-							value="${question.ans2_4_5}">日間が適切
+						⑤適切と思う日数を記入してください。 <input type="number" min="0" max="99"
+							name="a2_4_5" maxlength="2" value="${question.ans2_4_5}">日間が適切
 					</div>
 					<div class="impression">
 						⑥感想を自由にお書きください。 <br />
@@ -1207,8 +1216,8 @@
 					</table>
 					<div class="appropriate">
 						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。 <br />
-						⑤適切と思う日数を記入してください。 <input type="number" min="0" max="99" name="a2_5_5" maxlength="2"
-							value="${question.ans2_5_5}">日間が適切
+						⑤適切と思う日数を記入してください。 <input type="number" min="0" max="99"
+							name="a2_5_5" maxlength="2" value="${question.ans2_5_5}">日間が適切
 					</div>
 					<div class="impression">
 						⑥感想を自由にお書きください。 <br />
@@ -1436,6 +1445,7 @@
 				</table>
 			</form>
 		</div>
+
 	</div>
 	<div class="l_footer"></div>
 </body>

@@ -22,6 +22,7 @@
 	media="screen and (max-width: 640px)">
 <script type="text/javascript" charset="UTF-8" src="js/change.js"></script>
 <script type="text/javascript" charset="UTF-8" src="js/modal.js"></script>
+<script type="text/javascript" charset="UTF-8" src="js/button.js"></script>
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script type="text/javascript" src="js/featherlight.js"></script>
@@ -88,8 +89,10 @@
 					</c:if>
 					<table style="float: left;">
 						<tr>
-							<td><select name="Education_cmb" size="1">
+							<td><select name="Education_cmb" id = "education" size="1"
+							onchange="Education()">
 									<option value="0">-選択してください-</option>
+									<option value="1">佐々木</option>
 									<c:forEach var="education" items="${education}"
 										varStatus="loop">
 										<option
@@ -101,13 +104,14 @@
 							</select></td>
 							<td>
 								<p style="position: relative;">
-									<input type="image" src="img/search.png"
+									<input type="image" id="btn" src="img/search.png"
 										style="width: 65px; height: 40px;"
 										onclick="goSubmit(this.form, this);"
-										name="EducationTopSearch_btn" value="" alt="詳細">
+										name="EducationTopSearch_btn" value="" alt="詳細"disabled/>
 								</p>
 							</td>
 						</tr>
+
 					</table>
 				</form>
 			</div>

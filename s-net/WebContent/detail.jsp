@@ -129,8 +129,8 @@
 								<input type="hidden" name="action" />
 								<p style="position: relative;">
 									<input type="image" src="img/question.png"
-										onclick="goSubmit(this.form, this);" name="Question_btn"
-										value="" alt="アンケート">
+										onclick="goSubmit(this.form, this);"name="Question_btn"
+										 value="" alt="アンケート">
 								</p>
 							</form>
 						</div>

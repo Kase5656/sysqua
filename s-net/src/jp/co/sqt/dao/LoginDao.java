@@ -100,7 +100,7 @@ public class LoginDao {
 		/** アカウント情報を取得するSQL文 */
 		if (flg == 0) {
 
-			sql = "SELECT *"
+			sql = "SELECT * "
 					+ "FROM m_account "
 					+ "WHERE account_id = '" + accountId + "';";
 

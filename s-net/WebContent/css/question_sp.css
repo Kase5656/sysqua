@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+#scrollframe {
+	width: 100%;
+}
+
+body {
+	margin: 0;
+	padding-bottom: 90px;
+	font-family: "Meiryo UI", sans-serif;
+	/*overflow-x: hidden;*/
+	-webkit-text-size-adjust: 100%;
+}
+
+input[type="text"],input[type="password"],input[type="date"] ,input[type="tel"] {
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	background: #fff;
+}
+
+input[type="time"] {
+	background: #fff;
+}
+
+input[onclick="goSubmit(this.form, this);"] {
+	width: 57px;
+	height: auto;
+}
+
+input[alt="ログイン"] {
+	width: auto;
+	hegiht: auto;
+}
+
+textarea {
+	width: 100%;
+	font-size: 16px;
+}
+
+select {
+	width :100%;
+	font-size: 16px;
+	text-align: center;
+	background: #fff;
+}
+
+#pagename {
+	position: relative;
+	top: 30px;
+	left: 30px;
+}
+
+#header {
+	position: fixed;
+	width: 100%;
+	height: 135px;
+	top: 0;
+	background: #10287e;
+	background: linear-gradient(#10287e, #1c64bd);
+	z-index: 100;
+}
+
+#head-inner {
+    position: relative;
+    z-index: 2;
+    height: 95px;
+    margin: 0 auto;
+}
+
+#head-img-logo {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    border: 0px;
+    top: 14px;
+}
+
+#head-loginidwel {
+    display: none;
+}
+
+#head-loginid {
+    float: right;
+    padding-right: 61px;
+    padding-left: 108px;
+    margin: 21px auto 0 auto;
+    font-size: 14px;
+}
+
+#head-img-logout {
+    position: absolute;
+    width: 23%;
+    height: auto;
+    top: 60px;
+    right: 1%;
+}
+
+#head-img-mypage {
+    position: absolute;
+    width: 23%;
+    height: auto;
+    top: 60px;
+    right: 25%;
+}
+
+#head-img-loginidman {
+    position: absolute;
+    z-index: 9999;
+    background-image: url(../img/qicone.png);
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: 0px;
+    top: 5px;
+    right: 5px;
+}
+
+#menu-bar {
+    width: 100%;
+    height: 40px;
+    background: #4682B4;
+}
+
+#footer {
+	position: fixed;
+	width: 100%;
+	height: 20px;
+	bottom: 0;
+	background: linear-gradient(#4682B4, #4682B4);
+	color: white;
+	font-size: 13px;
+	text-align: center;
+	z-index: 2147483647;
+}
+
+#scrollframe {
+	position: relative;
+	top: 60px;
+	margin: 0 auto;
+	border: none;
+	/* 	text-align: center;
+ */
+}
+
+#scrollframe2 {
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	text-align: center;
+}
+
+#menuscrollframe {
+	width: 1270px;
+	margin-top: 35px;
+	border: none;
+}
+
+tbody.scrollBody {
+	border: solid 1px #808080;
+	overflow: auto;
+	height: 100px;
+}
+
+tr {
+	vertical-align: inherit;
+	border-collor: inherit;
+}
+
+.td{
+	border-bottom: none;
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  . td:last-child {
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+  }
+
+p {
+	line-height: 150%;
+    color: #333;
+    /* padding-bottom: 13px; */
+    font-family: "Meiryo UI", sans-serif;
+        padding-left: 10px;
+}
+
+
+
+.featherlight-sample {
+    display: none;
+}
+
+.button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+}
+
+
+.questionTable {
+		width: 90%;
+    border-collapse: collapse;
+    border:2px solid #a9a9a9;
+	text-align:center;
+	margin-right: 30px;
+}
+
+.questionTable th {
+	color: #fff;
+	background: #258;
+	background: -moz-linear-gradient(rgba(34, 85, 136, 0.7),rgba(34, 85, 136, 0.9) 50%);
+	background: -webkit-gradient(linear, 100% 0%, 100% 50%, from(rgba(34, 85, 136, 0.7)),
+		to(rgba(34, 85, 136, 0.9)));
+}
+
+table.questionTable th {
+    height: 50px;
+    border: 2px solid #a9a9a9;
+    table-layout: fixed;
+    width: 10px;
+}
+
+table.questionTable td {
+	border-bottom: 2px solid #a9a9a9;
+
+}
+
+.questionTextarea{
+	width: 90%;
+	height: 100px;
+	border-width: 2px;
+}
+
+.questionTitle1 {
+	text-align: left;
+	font-size: 20px;
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+.questionTitle2 {
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-top: 30px;
+	font-size: 15px;
+}
+
+.questionContent {
+	margin-left: 40px
+}
+
+.questionSelect {
+	text-align: left;
+	margin-top: 15px;
+}
+
+.questionSelect div {
+	margin-bottom: 5px;
+}
+
+.appropriate {
+	margin-top: 15px;
+	font-size: 15px;
+	margin-left: 2px;
+	margin-right: 30px;
+	line-height: 24px;
+}
+
+.Answer_btn {
+	text-align: center;
+}
+
+#footer {
+    position: fixed;
+    width: 100%;
+    height: 20px;
+    bottom: 0;
+    background: linear-gradient(#4682B4, #4682B4);
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    z-index: 2147483647;
+}
+
+table.button2 {
+    vertical-align: bottom;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+.item1 {
+	border-right: 2px solid #a9a9a9;
+
+}
+

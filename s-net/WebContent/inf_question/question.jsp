@@ -16,13 +16,15 @@
 	media="screen and (min-width: 640px)">
 <link rel="stylesheet" href="css/question_sp.css" type="text/css"
 	media="screen and (max-width: 640px)">
-	<link rel="stylesheet" href="css/style_sp.css" type="text/css"
-	media="screen and (max-width: 640px)">
 <link rel="stylesheet" href="css/featherlight.css"
 	media="screen and (min-width: 640px)">
+<link rel="stylesheet" href="css/featherlight_sp.css"
+	media="screen and (max-width: 640px)">
 <script type="text/javascript" charset="UTF-8" src="js/change.js"></script>
 <script type="text/javascript"
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script
+	src="https://cdn.datatables.net/t/bs-3.3.6/jqc-1.12.0,dt-1.10.11/datatables.min.js"></script>
 <script type="text/javascript" src="js/featherlight.js"></script>
 <script type="text/javascript">
 	$(function() {
@@ -260,14 +262,15 @@
 					<table class="questionTable">
 						<tr>
 							<th>項目</th>
-							<th>非常にそう思う</th>
-							<th>そう思う</th>
-							<th>どちらともいえない</th>
-							<th>思わない</th>
-							<th>全く思わない</th>
-						<tr>
-							<td>①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
-							<td><c:choose>
+							<th>良</th>
+							<th>←</th>
+							<th>並</th>
+							<th>→</th>
+							<th>悪</th>
+						</tr>
+						<tr class="last">
+							<td class= "item1">①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
+							<td class= "cell item1-2"><c:choose>
 									<c:when test="${question.ans2_1_1 == 5}">
 										<input type="radio" name="a2_1_1" value="5" checked>
 									</c:when>
@@ -275,7 +278,7 @@
 										<input type="radio" name="a2_1_1" value="5">
 									</c:otherwise>
 								</c:choose></td>
-							<td><c:choose>
+							<td class= "cell item1-3"><c:choose>
 									<c:when test="${question.ans2_1_1 == 4}">
 										<input type="radio" name="a2_1_1" value="4" checked>
 									</c:when>
@@ -283,7 +286,7 @@
 										<input type="radio" name="a2_1_1" value="4">
 									</c:otherwise>
 								</c:choose></td>
-							<td><c:choose>
+							<td class= "cell item1-4"><c:choose>
 									<c:when test="${question.ans2_1_1 == 3}">
 										<input type="radio" name="a2_1_1" value="3" checked>
 									</c:when>
@@ -291,7 +294,7 @@
 										<input type="radio" name="a2_1_1" value="3">
 									</c:otherwise>
 								</c:choose></td>
-							<td><c:choose>
+							<td class= "cell item1-5"><c:choose>
 									<c:when test="${question.ans2_1_1 == 2}">
 										<input type="radio" name="a2_1_1" value="2" checked>
 									</c:when>
@@ -299,7 +302,7 @@
 										<input type="radio" name="a2_1_1" value="2">
 									</c:otherwise>
 								</c:choose></td>
-							<td><c:choose>
+							<td class= "cell item1-6"><c:choose>
 									<c:when test="${question.ans2_1_1 == 1}">
 										<input type="radio" name="a2_1_1" value="1" checked>
 									</c:when>
@@ -309,7 +312,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_1_2 == 5}">
 										<input type="radio" name="a2_1_2" value="5" checked>
@@ -352,7 +355,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_1_3 == 5}">
 										<input type="radio" name="a2_1_3" value="5" checked>
@@ -395,7 +398,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_1_4 == 5}">
 										<input type="radio" name="a2_1_4" value="5" checked>
@@ -439,7 +442,7 @@
 						</tr>
 					</table>
 					<div class="appropriate">
-						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。<br /> ⑤適切と思う日数を記入してください。
+						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。<br />⑤適切と思う日数を記入してください。<br />
 						<input type="number" min="0" max="99" name="a2_1_5" maxlength="2"
 							value="${question.ans2_1_5}">日間が適切
 					</div>
@@ -454,13 +457,13 @@
 					<table class="questionTable">
 						<tr>
 							<th>項目</th>
-							<th>非常にそう思う</th>
-							<th>そう思う</th>
-							<th>どちらともいえない</th>
-							<th>そう思わない</th>
-							<th>全くそう思わない</th>
+							<th>良</th>
+							<th>←</th>
+							<th>並</th>
+							<th>→</th>
+							<th>悪</th>
 						<tr>
-							<td>①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_2_1 == 5}">
 										<input type="radio" name="a2_2_1" value="5" checked>
@@ -503,7 +506,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_2_2 == 5}">
 										<input type="radio" name="a2_2_2" value="5" checked>
@@ -546,7 +549,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_2_3 == 5}">
 										<input type="radio" name="a2_2_3" value="5" checked>
@@ -589,7 +592,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_2_4 == 5}">
 										<input type="radio" name="a2_2_4" value="5" checked>
@@ -633,7 +636,7 @@
 						</tr>
 					</table>
 					<div class="appropriate">
-						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。<br />⑤適切と思う日数を記入してください。
+						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。<br />⑤適切と思う日数を記入してください。<br />
 						<input type="number" min="0" max="99" name="a2_2_5" maxlength="2"
 							value="${question.ans2_2_5}">日間が適切
 					</div>
@@ -648,13 +651,13 @@
 					<table class="questionTable">
 						<tr>
 							<th>項目</th>
-							<th>非常にそう思う</th>
-							<th>そう思う</th>
-							<th>どちらともいえない</th>
-							<th>そう思わない</th>
-							<th>全くそう思わない</th>
+							<th>良</th>
+							<th>←</th>
+							<th>並</th>
+							<th>→</th>
+							<th>悪</th>
 						<tr>
-							<td>①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_3_1 == 5}">
 										<input type="radio" name="a2_3_1" value="5" checked>
@@ -697,7 +700,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_3_2 == 5}">
 										<input type="radio" name="a2_3_2" value="5" checked>
@@ -740,7 +743,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_3_3 == 5}">
 										<input type="radio" name="a2_3_3" value="5" checked>
@@ -783,7 +786,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_3_4 == 5}">
 										<input type="radio" name="a2_3_4" value="5" checked>
@@ -827,7 +830,7 @@
 						</tr>
 					</table>
 					<div class="appropriate">
-						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。<br /> ⑤適切と思う日数を記入してください。
+						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。<br /> ⑤適切と思う日数を記入してください。<br />
 						<input type="number" min="0" max="99" name="a2_3_5" maxlength="2"
 							value="${question.ans2_3_5}">日間が適切
 					</div>
@@ -842,13 +845,13 @@
 					<table class="questionTable">
 						<tr>
 							<th>項目</th>
-							<th>非常にそう思う</th>
-							<th>そう思う</th>
-							<th>どちらともいえない</th>
-							<th>そう思わない</th>
-							<th>全くそう思わない</th>
+							<th>良</th>
+							<th>←</th>
+							<th>並</th>
+							<th>→</th>
+							<th>悪</th>
 						<tr>
-							<td>①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_4_1 == 5}">
 										<input type="radio" name="a2_4_1" value="5" checked>
@@ -891,7 +894,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_4_2 == 5}">
 										<input type="radio" name="a2_4_2" value="5" checked>
@@ -934,7 +937,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_4_3 == 5}">
 										<input type="radio" name="a2_4_3" value="5" checked>
@@ -977,7 +980,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_4_4 == 5}">
 										<input type="radio" name="a2_4_4" value="5" checked>
@@ -1022,7 +1025,7 @@
 					</table>
 					<div class="appropriate">
 						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。 <br />
-						⑤適切と思う日数を記入してください。 <input type="number" min="0" max="99"
+						⑤適切と思う日数を記入してください。<br /> <input type="number" min="0" max="99"
 							name="a2_4_5" maxlength="2" value="${question.ans2_4_5}">日間が適切
 					</div>
 					<div class="impression">
@@ -1036,13 +1039,13 @@
 					<table class="questionTable">
 						<tr>
 							<th>項目</th>
-							<th>非常にそう思う</th>
-							<th>そう思う</th>
-							<th>どちらともいえない</th>
-							<th>そう思わない</th>
-							<th>全くそう思わない</th>
+							<th>良</th>
+							<th>←</th>
+							<th>並</th>
+							<th>→</th>
+							<th>悪</th>
 						<tr>
-							<td>①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_5_1 == 5}">
 										<input type="radio" name="a2_5_1" value="5" checked>
@@ -1085,7 +1088,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_5_2 == 5}">
 										<input type="radio" name="a2_5_2" value="5" checked>
@@ -1128,7 +1131,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_5_3 == 5}">
 										<input type="radio" name="a2_5_3" value="5" checked>
@@ -1171,7 +1174,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_5_4 == 5}">
 										<input type="radio" name="a2_5_4" value="5" checked>
@@ -1216,7 +1219,7 @@
 					</table>
 					<div class="appropriate">
 						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。 <br />
-						⑤適切と思う日数を記入してください。 <input type="number" min="0" max="99"
+						⑤適切と思う日数を記入してください。<br /> <input type="number" min="0" max="99"
 							name="a2_5_5" maxlength="2" value="${question.ans2_5_5}">日間が適切
 					</div>
 					<div class="impression">
@@ -1230,13 +1233,13 @@
 					<table class="questionTable">
 						<tr>
 							<th>項目</th>
-							<th>非常にそう思う</th>
-							<th>そう思う</th>
-							<th>どちらともいえない</th>
-							<th>そう思わない</th>
-							<th>全くそう思わない</th>
+							<th>良</th>
+							<th>←</th>
+							<th>並</th>
+							<th>→</th>
+							<th>悪</th>
 						<tr>
-							<td>①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">①講義は今後に役立つ内容でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_6_1 == 5}">
 										<input type="radio" name="a2_6_1" value="5" checked>
@@ -1279,7 +1282,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">②講師の説明は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_6_2 == 5}">
 										<input type="radio" name="a2_6_2" value="5" checked>
@@ -1322,7 +1325,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
+							<td class= "item1">③講義資料は分かりやすかったですか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_6_3 == 5}">
 										<input type="radio" name="a2_6_3" value="5" checked>
@@ -1365,7 +1368,7 @@
 								</c:choose></td>
 						</tr>
 						<tr>
-							<td>④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
+							<td class= "item1">④この科目の時間数は適切でしたか。<span style="color: red">*</span></td>
 							<td><c:choose>
 									<c:when test="${question.ans2_6_4 == 5}">
 										<input type="radio" name="a2_6_4" value="5" checked>
@@ -1409,7 +1412,7 @@
 						</tr>
 					</table>
 					<div class="appropriate">
-						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。 <br /> 適切と思う日数を記入してください。
+						※時間数について、「思わない」「全く思わない」を選択した場合のみお答えください。 <br /> 適切と思う日数を記入してください。<br />
 						<input type="number" min="0" max="99" name="a2_6_5" maxlength="2"
 							value="${question.ans2_6_5}">日間が適切 <br />
 					</div>

@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex">
 <link rel="stylesheet" href="css/style.css" type="text/css">
 <link rel="stylesheet" href="css/account.css" type="text/css">
 <link rel="stylesheet" href="css/featherlight.css">

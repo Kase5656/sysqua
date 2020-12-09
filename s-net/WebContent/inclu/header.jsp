@@ -42,7 +42,8 @@
 	</p>
 	<p>
 		Q.ユーザIDを忘れた場合はどうしたら良いですか？<br>
-		A.左記RMSサポートまでメールよりお問い合わせください。rms_support@sqt.co.jp
+		A.右記RMSサポートまでメールよりお問い合わせください。
+		rms_support@sqt.co.jp
 	</p>
 	<br>
 	<!-- 	<p>

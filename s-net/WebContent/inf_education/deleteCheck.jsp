@@ -6,6 +6,7 @@
 <!DOCTYPE HTML PUBLIC>
 <html>
 <head>
+<meta name="robots" content="noindex">
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/education.css" type="text/css">
 <link rel="stylesheet" href="css/style.css" type="text/css">

@@ -30,7 +30,6 @@
 		Connection connect = DriverManager.getConnection(
 				"jdbc:mysql://153.126.190.151:3306/rookies?autoReconnect=true&amp;serverTimezone=JST&amp;useSSL=false&amp",
 				"intec", "sqt_itmng/3666");
-
 		PreparedStatement ps = connect.prepareStatement(
 				"SELECT *,date_format(topics_date,'%Y-%m-%d %H:%i:%S') topicsdate FROM t_topics WHERE topics_flg = 0 AND delete_flg = 0 ORDER BY topics_date DESC");
 
@@ -60,6 +59,7 @@
 	session.invalidate();
 %>
 <head>
+<meta name="robots" content="noindex">
 <meta charset="UTF-8">
 <meta name="viewport"
 	content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
